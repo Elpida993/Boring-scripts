@@ -1,3 +1,5 @@
+#Loop by printing numbers 5 times. then creating a space, then continuing.
+
 import time
 
 counter = 0
